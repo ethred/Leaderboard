@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,400;0,700;1,400&family=Lato:ital,wght@0,400;0,700;0,900;1,900&family=Poppins:wght@400;700&family=Raleway:wght@300;900&display=swap);
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  background: rgb(242, 242, 242);
+}
+
+.wrapper {
+  font-style: normal;
+  padding-left: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+  padding-right: 100px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.title {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 0;
+  align-items: center;
+}
+
+form button {
+  width: 70px;
+  align-self: end;
+  height: 28px;
+  border-radius: 5px;
+}
+
+.title button {
+  width: 83px;
+  height: 30px;
+}
+
+.result {
+  border: 3px solid black;
+}
+
+.result ul {
+  list-style: none;
+  margin-top: 0;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.result ul li {
+  margin-bottom: 10px;
+}
+
+.result-submititon {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+form input {
+  width: 100%;
+  height: 22px;
+  border-radius: 5px;
+}
