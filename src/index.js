@@ -1,3 +1,4 @@
+/* eslint-disable prefer-destructuring */
 import './style.css';
 
 import {
@@ -10,17 +11,30 @@ const scoreInput = document.querySelector('#score');
 const refresh = document.querySelector('button');
 
 let gameId;
+const startGamesRender = async () => {
+  try {
+    const response = await startGame('New Game Satrt Session');
+    const res = response.result.split(' ');
+    [gameId] = res[3];
+  } catch (error) {
+    throw new Error('Error score Value submitting:', error);
+  }
+};
 const startGames = () => {
-  startGame('New Game Satrt Session')
-    .then((response) => response.result.split(' '))
-    .then((res) => {
-      [gameId] = [res[3]];
-    });
+  startGamesRender();
+};
+
+const renderScores = async (gameId) => {
+  try {
+    const response = await getScores(gameId);
+    render(response.result);
+  } catch (error) {
+    throw new Error('Error score Value submitting:', error);
+  }
 };
 
 const getScoress = () => {
-  getScores(gameId)
-    .then((response) => render(response.result));
+  renderScores(gameId);
 };
 
 const postScores = (e) => {

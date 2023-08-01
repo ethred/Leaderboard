@@ -1,7 +1,7 @@
 const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
 const list = document.querySelector('.list-score');
 
-async function startGame(gameName) {
+const startGame = async (gameName) => {
   const responseStart = await fetch(url, {
     method: 'POST',
     body: JSON.stringify({
@@ -14,9 +14,9 @@ async function startGame(gameName) {
 
   const responseData = await responseStart.json();
   return responseData;
-}
+};
 
-async function getScores(gameId) {
+const getScores = async (gameId) => {
   try {
     const responseStart = await fetch(`${url}${gameId}/scores/`);
     const responseData = await responseStart.json();
@@ -24,9 +24,9 @@ async function getScores(gameId) {
   } catch (error) {
     return [];
   }
-}
+};
 
-async function postScore(gameId, name, score) {
+const postScore = async (gameId, name, score) => {
   if (name === '' || score === '') {
     alert('Please enter a valid name or Score');
   }
@@ -50,7 +50,7 @@ async function postScore(gameId, name, score) {
   } catch (error) {
     throw new Error('Error score Value submitting:', error);
   }
-}
+};
 
 const render = (arr) => {
   list.innerHTML = '';
