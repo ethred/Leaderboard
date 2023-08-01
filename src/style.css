@@ -11,14 +11,19 @@ body {
   padding-left: 40px;
   display: flex;
   justify-content: space-between;
-  width: 35%;
+  width: 80%;
   padding-right: 100px;
+}
+
+.results {
+  width: 60%;
+  background-color: rgb(111, 0, 255);
+  border-top-left-radius: 30px;
+  padding-left: 30px;
 }
 
 h1 {
   font-size: 40px;
-  background: rgb(95, 26, 214);
-  text-align: center;
 }
 
 .title {
@@ -63,6 +68,7 @@ form button {
 .result-submititon {
   display: flex;
   flex-direction: column;
+  width: 25%;
 }
 
 form {
