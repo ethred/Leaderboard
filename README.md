@@ -44,7 +44,8 @@
 
 ### Key Features <a name="key-features">
 
-- Strutue of LeaderBoard 
+- Submit Player Name and Result and save through the API
+- Dipslay The result when we hit the refresh button
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -99,8 +100,7 @@ Must-Install-Project-with-the-Following-Programmes:
 ## 🔭 Future Features <a name="future-features"></a>
 
 - Adding Name and Score result
-- Display the result 
-
+- Display the result
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
