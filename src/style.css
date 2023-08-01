@@ -17,6 +17,8 @@ body {
 
 h1 {
   font-size: 40px;
+  background: rgb(95, 26, 214);
+  text-align: center;
 }
 
 .title {
@@ -43,6 +45,7 @@ form button {
 }
 
 .result ul {
+  font-size: 16px;
   list-style: none;
   margin-top: 0;
   padding-left: 10px;
@@ -51,6 +54,10 @@ form button {
 
 .result ul li {
   margin-bottom: 10px;
+}
+
+.result ul li:nth-child(even) {
+  background: rgb(138, 136, 136);
 }
 
 .result-submititon {
